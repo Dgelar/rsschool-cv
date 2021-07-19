@@ -1,4 +1,4 @@
-####Andrey Lohach
+#### Andrey Lohach
 
 
 ==================================
@@ -60,15 +60,31 @@ _Kiev, Pavla Tychiny 35, 55_
 ##Code examples##
 ```
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Привет, мир!</title>
-  </head>
-  <body>
-    <h1>Привет, мир!</h1>
-    <p>Это веб-страница.</p>
- </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <form name="form1" method="GET" action="accept.php">
+        Фамилия <br>
+        <input name="surname" type="text" size="30"> <br>
+        Имя <br>
+        <input name="name" type="text" size="30"> <br>
+        Пароль<br>
+        <input name="password" type="password" size="30"> <br>
+        <input name="remember" type="checkbox" value="yes"> Запомнить <br>
+        <input name="enter" type="submit" value="Вход"> <br>
+        <input list="gender">
+                <datalist id="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+        <input name="trial" type="radio">Согласен на обработку данных <br>
+    </form>
+</body>
 </html>
 ```
 
